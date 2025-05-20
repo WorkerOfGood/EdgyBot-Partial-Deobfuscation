@@ -1,0 +1,1237 @@
+// ==UserScript==
+// @name         EdgyBot - Edgenuity Bot
+// @namespace    http://tampermonkey.net/
+// @version      1.9.7.5
+// @description  [ Edgy means experimental :) ] - Partially AFK. Answers 99% of (assignment, intro, instructions, warm-ups), Skips past tests and quizzes on course-line in order to quickly get ahead, Unlocks all brainly answers and removes 1 answer per day limit. You can leave it running, but please stay in the same room in case the bot stops. Any problem is fixed witha  simple refresh of the page.
+// @author       EdgePlus+
+// @match        *://student.edgenuity.com/*
+// @match        *://*.core.learn.edgenuity.com/*
+// @match        *://auth.edgenuity.com/*
+// @match        *://media.edgenuity.com/media/*
+// @match        *://brainly.com/*
+// @match        https://edgenuity-plus.web.app/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=edgenuity.com
+// @grant GM_setValue
+// @grant GM_getValue
+// @grant GM_deleteValue
+// @noframes
+// ==/UserScript==
+
+(function (_0x3422df, _0x3c249b) {
+  const _0x332693 = _0x3422df();
+  while (true) {
+    try {
+      const _0x4a080d = parseInt(_0x54ac(1281, 0x437)) / 1 * (-parseInt(_0x54ac(1306, 0x46a)) / 2) + -parseInt(_0x54ac(483, 0x207)) / 3 + parseInt(_0x54ac(972, 0x44d)) / 4 * (parseInt(_0x54ac(1213, 0x5c2)) / 5) + parseInt(_0x54ac(1859, 0x961)) / 6 * (-parseInt(_0x54ac(1210, 0x83b)) / 7) + -parseInt(_0x54ac(1102, 0x2a4)) / 8 + -parseInt(_0x54ac(1361, 0x3f1)) / 9 * (-parseInt(_0x54ac(1558, 0x6ec)) / 10) + -parseInt(_0x54ac(530, 0x1e8)) / 11 * (-parseInt(_0x54ac(2057, 0xcb8)) / 12);
+      if (_0x4a080d === _0x3c249b) {
+        break;
+      } else {
+        _0x332693.push(_0x332693.shift());
+      }
+    } catch (_0x2a1107) {
+      _0x332693.push(_0x332693.shift());
+    }
+  }
+})(_0x2516, 785074);
+function _0x2516() {
+  const _0x358481 = ['min', 'trace', 'version', 'MFmJB', 'eKYBB', "estion js-", 'vcwhG', 'background', 'LfWcz', 'sByClassNa', 'gdjFj', "72-1.967 3", 'cornflower', 'https://st', "r keyboard", 'hOSpd', 'YUuzU', 'ygipt', "ase make s", 'lnRdI', 'OHbua', " fix issue", 'FyLdJ', 'ZbXbu', "n't unlock", " for this ", 'us.web.app', 'JUATL', 'efuQh', " row; alig", 'QMYGM', 'SNTCg', 'ZraVB', 'eXSOF', "ay: flex; ", "Referral P", ',location=', 'ess.com/fu', 'nav-link', 'MkFUI', 'dia.edgenu', "*','X-Requ", 'nal', 'WhTCq', '&choices=', 'vaKRf', "gnment of ", 'ndow.paren', 'LgvuK', 'brn-unlock', "       <di", 'OyBbB', 'JchuU', 'TkdQx', "uibtn uibt", 'rPVsx', ">\n        ", "mplete the", 'XRWTY', "ments are ", 'unittest', 'cation.hre', 'KCdMR', 'FxdSr', " answers a", 'ument', 'jrSob', 'vaLqU', 'gated', "EdgyBot ca", 'Jqltv', ". Brainly ", '-text--lin', '3.472l9.70', 'amily:inhe', 'fit-conten', "If this co", 'jYciB', 'r/expires', "s for you.", 'content', "arch for t", "          ", "in you pai", 'sSOJC', 'xfIzK', 'PDRRi', "😊\n\nI have ", 'UbMLZ', "unlocked a", "      </di", 'qOfHu', 'ById', "d!! 🔓\n\nPle", 'PNTFg', ", please c", 'KPnBO', 'activity-s', 'e;margin:0', 'ter;font-f', 'nZxEJ', "div>\n     ", 'ozseX', 'uetCG', 'QPinM', 'flex-colum', 'Question_C', 'esBcp', "irection: ", 'MoLhn', 'KeFkN', "elp you co", "     <svg ", ".\n\nTo remo", "ur classic", 'YDJhV', "-md edgenu", 'qBzFz', 'nRTnn', 'nxOgd', 'nodeName', "so that Ed", 'justify-se', 'y:inherit;', 'YZTaE', 'rn-common-', '1368SKspfN', 'bvISh', "class. 🔐\n\n", ';align-ite', 'vTojX', 'pYDSn', 'WjXlL', 'ested-With', 'bvLFz', 'API', 'readyState', "ground: #4", 'ent', 'MqPAW', 'wZzdG', 'mkbCt', 'aVBKf', "teachers a", 'LcoKS', 'iGCDa', 'UoyMR', 'value', "rection: r", 'wTZKQ', 'UlhcX', "ve later, ", "-content: ", 'BJJjP', 'BxBIF', 'pJcGZ', 'xeJiw', "s in case ", 'eeMaG', "en tested ", "actory res", 'ify-conten', 'interactiv', 'uvwxyz', 'kIoyI', 'yPmZf', 'split', '(((.+)+)+)', ".\n\nBrainly", 'jWpyC', 'xeIHM', "ssues. 🤔", "ssist you.", 'offsetTop', 'qboIn', "or you & w", 'tn-arrow-n', 'QdnBg', 'ice', 'tagFV', 'RzxcZ', "; align-co", 'view', "nt  FrameC", "ck CTRL AL", 'ct:none;-m', 'ptXbN', 'vHLIm', 'mRIfJ', 'AmGig', "();\" class", 'nav-link-t', 'iKIiA', 'zJhar', 'etcQy', 'FAKdz', 'scrollLeft', 'MCFsq', 'OdMnH', 'baseline', 'CXGLU', "; justify-", "splay: fle", 'navbar-bra', 'LMbvT', "n is serve", 'score', 'cJKRE', 'ryskillsle', 'LNzeD', "er; justif", '-icon__svg', 'iCKUs', 'text());wi', " 25px; } .", 'eOvAS', 'RrRVs', 'vVmhA', 'QhXbR', 'elKPv', "container ", "\nWould you", "tion x() {", 'topictest', 'FrameChain', "ou decide ", 'Practice_Q', 'BouqA', 'VaRLW', 'FJpXo', 'bmLRW', 'blur', '40%;backgr', 'getItem', 'pull-right', 'mn;padding', "-icon sg-i", 'toolbar=no', "s unit) in", 'zCwvz', 'EEQUJ', "ted assign", 'hmZLY', 'sykGJ', 'GEgGH', 'nlock-sect', 'WWGPB', 'bzwYs', 'gfnqE', 'mouseup', '-align:cen', 'vid', 'sByName', 'sGccn', 'RMseL', 'nlEhu', 'dragging:n', 'n:0.5s;wid', 'iZobn', 'FanHn', 'HBsUq', 'BrPih', "has not be", 'yvvEc', " possible,", 'course-tim', "ontact you", 'DHGvR', 'mMNyL', 'bssyK', 'RqPra', 'shift', 'scrollTop', 'length', 'WejoE', 'hkWKd', 'attributes', "agram to l", "fb3f6; bor", 'cIfvO', "ill automa", 'FISpz', '-module__w', "async func", 'yAniH', "ry reset. ", 'JVCwa', 'ity.com/co', 'OUxiM', 'yrbbz', 'nuity.com', 'uHYme', 'skAjN', 'open', 'question/', 'omplete', 'OZFNz', "n-blue uib", 'FZEyv', 'eZCxl', 'mLJmh', 'FFvaD', "lf: flex-s", "gnments re", "Bot will h", "icon\"><svg", 'ReunC', "se pick an", "ow popups ", 'SuNby', "finished. ", ": space-be", 'zESdz', '=bot_off', 'teString', 'vvRMt', 'GLLva', " answers f", 'iKjzi', 'gcCdf', 'omatically', 'directinst', 'gyBot', 'Login', '627996EcsGEH', "s, etc...\n", 'bVWUY', 'ui-tabs-na', 'ptqBR', "ry again.\n", 'VKvKJ', 'qBrye', 'approved', 'IpThY', 'WegXS', 'naRKs', "undefined ", 'uJCSj', 'TABLE', 'JUCgi', 'key', 'ection:row', 'mMHoD', 'CDdBS', 'ning', 'BHBtH', "tart; just", 'OoqDB', 'bind', 'EBIkn', 'kgkUk', 'RRNjA', 'JtCYb', 'rJMuu', "ation. 😊</", "ct sedgenu", 'OmsdK', 'tMYrJ', 'VCgeF', "TRL ALT B ", 'dvhEQ', 'in-top:20p', 'ydBvI', 'AQcZa', 'INPUT', 'ice-button', 'JJpDr', 'top', 'qBJHb', 'hWOhu', 'lecture', " it, but i", 'PVcVs', "quiz/test ", " <div clas", 'XhCUy', 'append', 'FsAJP', '949-1.967-', "h me to an", "etween; wi", 'ZiQXZ', "      {'Ac", 'tle', 'WMesV', 'y.com', "\nContact g", "r\"><div cl", 'img', " } .userna", 'rutoh', ".041-1.48 ", 'QddAD', '9-16.18c.8', 'rwUfN', 'tCbij', 'aREvQ', ".xml',{'cr", 'wactivity', "zzes, test", 'LBiVs', 'VgUEZ', "on: v", 'sIFVm', 'lyfreeansb', 'fmzDR', 'lvvjf', 'zrXxz', 'YWMAd', 'e3192;bord', "s for me t", "ckground t", 'mainfoot', 'status_bot', "lack;\" id=", " sg-text--", "rogram 🤩\n\n", "n unit-lis", "nction() ", 'AnDtN', 'OxQfy', 'ExVFI', '5px;outlin', 'KtFOO', "me:hover {", 'Lfgfw', 'leXoX', 'EHSlN', 'BTopN', 'yufPK', "ail.com 😊", 'pYpXz', 'zGgBg', 'SXlyK', "style=\"dis", 'TcMiN', 'ntent:cent', 'QjZpE', 'ivYRC', 'AFdNw', 'error', 'HeZgn', "o purchase", 'AinEs', 'd-*', 'MtBYq', 'locked', 'xwTrW', 'LjvAH', 'sByTagName', 'StackProgr', 'daReA', 'oYMgj', '/tarefa', "freeansbx ", 'WtRxH', 'zlyHy', ": 20px; } ", 'GKkEi', 'v-dropdown', 'checked', 'BEGXQ', 'getElement', 'oidRV', 'OqMSZ', "g you thro", 'one;-ms-us', 'VrpXd', 'wKRvi', "ion: row; ", 'ity', 'xoOPj', 'EINXi', 'color', "nclick=\"lo", 'JODsr', 'RMTSM', 'pathname', "e done aut", "he answers", "=(await x.", "d I will a", 'oFynh', 'constructo', 'Frame', 'yOlvR', 'LVGUW', 'aSyqx', 'KNChD', '_class|', 'uQquJ', 'rTjKt', "se svg { c", 'udent.edge', "isplay: fl", '::EDGYBOT:', 'choices', 'DWJLl', "e; fill: w", 'uSWzm', "nav-link d", "ext hidden", 't:none;wid', '3199710crOUmZ', '100%;displ', 'jsvJe', "icon\"><div", 'DMiyy', "y required", 'startsWith', 'XQtNC', 'OqqKb', "xt\" placeh", 'pVZEs', "This actio", "T C on you", 'ess', 'toolbar', " EdgePlus+", "dding: 20p", 'url(', 'vTrNq', 'wZfPV', "black url(", 'olumn;text', 'AYZMJ', 'x;align-it', '-helper-cl', "14c-1.784 ", "Bot\"/>\n   ", 'MAhMX', 'ZiIdw', 'scroll', 'rAXMM', 'tXtTm', 'fWEOr', "This class", 'checkbox', "s_ on inst", 'pHIQL', 'kmKNy', " for activ", 'lrqhY', 'INKpo', 'GjEQt', 'mADCH', 'Size', 'ZTkqc', "style=\"col", 'px;font-fa', '528gFDyET', 'laQqO', 'giJWG', "ass=\"sg-av", 'jxnvl', 'unnel', "c=\"https:/", 'parseFromS', 'vrkIb', 'next', 'AYDVV', "n is usual", "click CTRL", 'black', "center; wi", "ses later ", 'YmliO', 'anJRj', " pretest (", 'UuClX', 'QGauP', "ure to all", 'wcouX', 'opGOq', 'Spqcr', "] ).remove", 'll/2471283', 'JLdHx', 'xgtRM', 'sSwTl', 'ZucmD', 'eeBRB', 'PRgLc', 'OsUky', 'ecture', 'FLLuc', 'WWYFp', " assist yo", 'ction:colu', 'MGQUe', 'Hldeh', "urrent Ver", "ointer; } ", 'aVmWE', 'kiqPr', 'includes', 'feUkR', 'MGzyN', 'ound:white', 'position:f', "dgyBot can", 'uCGSZ', " 🔴", 'FramesList', 'BZFuz', 'uestion_Bo', 'th.edgenui', 'glTMo', 'exam', 'gfzVo', 'MFhIc', "t center c", 'pv_key_edg', 'card-title', 'addEventLi', 'picked_cla', 'enter;marg', 'keys', "This means", 'UOqbf', 'rglfJ', "white; wid", "-section b", 'gray', 'pYZRz', 'p://www.w3', 'qzgeg', "Brainly So", "e a teache", 'irNbE', 'SGxCG', 'try=top&q=', 'UUzjd', 'ZiyWF', 'eRAMt', "quiring te", 'ydypi', "have any i", "t sedgenui", 'js-react-b', 'text/html', "; text-dec", "row; flex-", "olve any i", 'dQAKp', 'CKDZo', "et your ed", 'KOZkp', 'hcnjD', 'coFxs', "CTRL ALT C", 'huQEw', 'genuity-pl', 'tatus', 'YXjeT', 'jsCSp', 'ay:flex;ju', 'azzIg', "\"convey\">P", "s=\"profile", "re unlocke", ':20px;', 'tring', 'bg_state_e', "ed\">", 'toString', 'htEJh', 'UTLAa', "lyfreeans\"", 'yMgqV', " on your k", "x; flex-di", 'DiiUV', 'loljD', 'PXOCa', 'NziUx', '{}.constru', 'qxxev', "sername\" o", 'tzNqs', 'rYMPX', 'cvgmL', 'YlekT', 'klmnopqrst', 'tARTw', 'transparen', 'js-main-qu', 'gkiNE', 'ly:inherit', 'CSXWB', 'ner-all', 'search', 'npxfM', 'dATCg', ". EdgyBot ", 'body', 'UpiPp', 'mark', '.brainlyfr', 'g-avatar__', 'wQfPb', "ltip brn-u", " class=\"sg", 'JwRxb', 'yBot', 'eYNHy', "g people t", 'ynXnQ', 'gcZbQ', 'altKey', 'isplay:fle', " are certa", 'pKyDm', 'widget-hea', ": flex-end", 'nuity.com/', 'bubbles', 'n-content:', "lass=\"topr", 'jvOqX', 'one;-webki', "cept': '*/", "other clas", '&autoSearc', 'iCEWJ', 'hadow', "tent: cent", "ass for Ed", 'FWsLC', 'setItem', 'AsIPz', 'xTpKJ', 'lesson-pan', 'frames', 'fCDhC', 'avZyR', "der ui-cor", '&edgyQuest', 'BNXVd', 'ropdown-to', 'LlDCn', 'lRlUS', 'GazaR', 'hzzqI', '0-2.881-1.', "enter fixe", 'Tjkcy', "and gettin", ';width:90%', "nt;\">\n    ", 'GtfgM', 'assignment', 'ECjBM', 'ing', 'OUIPC', 'ClassName(', 'OCRDi', 'YOlGt', 'round:whit', 'ycfWb', 'o_controls', 'FjRDp', 'jlEPH', "\" type=\"te", 'qjtbG', " { color: ", 'vocabulary', "\nOpen a cl", 'exception', 'ActivityTi', " 24 24\"><p", "sist you! ", 'zCpZM', 'tor', 'lvpTG', 'Srefj', 'Ecrzm', 'WdPin', 'RjSNj', ". 😊", 'rrxeJ', "📈\n\nIf you ", 'UuLra', 'GmSWf', "to be manu", 'frame_vide', "v class=\"u", 'jShmz', 'GGvAz', 'uity@gmail', 'bOuPe', 'kdcrJ', "isting you", 'dius:5px;m', 'ion--withS', 'clientX', "x; display", 'WRUwc', "con--x32 s", 'mMMrg', 'spotlightl', 'TmoSk', 'lGUWj', 'qtdjp', 'QiZZP', " <p style=", 'alt', 'IGKDB', "Click OK t", 'pretest', 'OPTION', "referral p", "server loc", "\n         ", 'Ekjhj', 'ZLVWM', "of your pu", 'es,width=3', 'irOzL', 'ntentengin', "th:35%;\"sr", "r somethin", "even have ", "ext disabl", 'cture', 'XfLRs', 'RfAdD', "classic Ed", 'tWoYC', 'exploratio', 'RVmiF', 'input', 'FzVrF', 'XKLRX', 'LPuTh', 'sQiWY', 'fZRSg', 'jLBCL', " has been ", 'lablesson', 'WpViy', 'bold', 'font-famil', 'irection:c', "rap; flex-", 'ZSsUM', 'overflow', 'JXcHG', 'SnMrW', 'e&edgyQues', 'slice', 'ElementsBy', 'PCgei', 'YnEss', 'tems:cente', 'ity@gmail.', 'thanks', '-gS', 'TyzzZ', "=\"24\" heig", "ht=\"24\" vi", "sle-card c", 'gn-items:c', "px underli", "eded...\n\nC", 'kZTnx', 'display', 'querySelec', 'click', '(x)=>{text', 'grade', 'brainlyfre', "OK to conf", 'NLUJV', 'XMBpv', 'vbar-menu', 'BTwsE', " this page", 'mouseover', 'https://ed', "rry, EdgyB", " 608px; tr", 'vAlign', 'd_answer', 'kDPdx', 'QlNgm', 'CwwBz', 'wHbjf', "div class=", 'WzpXS', 'QEvWl', "\nOpen assi", 'KNMQg', 'TBWVH', 'SubmitQues', 'isConnecte', 'nEBsl', 'xuAxm', 'isJDs', 'qfZlF', '1px', "eeans { ma", "rogram & s", 'welcome-pa', "ewBox=\"0 0", "img style=", 'qQHwq', 'dncuu', 'graKM', "is script ", 'IoQvC', 'spLaY', '-items:cen', 'wPCKq', 'ontents', 'n.edgenuit', "star on th", "tion brn-c", 'clientY', "'\">Creator", 'SjBru', '/question', ". If you t", 'blue', 'cumulative', 'vWbUG', 'AquXW', 'eline', "To add bac", 'FnHBo', "task can b", 'ems:center', "09 16.18z\"", 'practice', "hed. 🤔", 't:35px;pad', 'VKeiW', "t?\n\nClick ", 'play', "ath d=\"M23", 'dbrrP', 'oz-window-', 'dow', 'jXhzA', 'jMbbS', "skip this ", 'TZUmY', 'OYxqx', 'MMjbE', 'stageFrame', 'nxsXi', "class=\"ans", 'UhyzC', "All automa", 'WbWgD', "Your purch", 'info', 'kURvk', 'padding-bo', 'console', 'ture', 'drkUe', 'mousedown', "age(text,'", 'Tkjed', 'cgyoc', 'drgpR', 'ext', 'qnHXB', "nav-link a", 'yAcql', 'WIqmR', 'KDJBA', ": 'omit','", 'CGqQF', 'GkxDc', "   ", "valid purc", 'tDDKv', 'registrati', 'mily:inher', 'wlCCT', "; margin: ", "=\"collapse", 'rgin-botto', 'yment-form', 'vQDls', 'ck-section', 'createElem', 'UndvV', 'llGfx', 'fhcrC', '34708QDxRxl', 'prikr', 'stify-cont', 'sbake', 'mccoM', ".com 😣", 'thub.com/G', "ugh the co", 'jXUvi', "ase contac", 'zQWQw', 'esizable=y', 'isdMZ', 'SNEbu', "       awa", 'pkYfP', 'location', 'kASJa', "answers wi", 'kryuO', 'rskyR', "0.3s; back", "This is a ", "hen(async ", 'GRfbJ', '/i.ibb.co/', 'le-status-', "d.\n\nThis i", 'ZVyAX', "nd navbar-", 'Vocabulary', ",'method':", 'izsqD', "it fetch('", 'ixed;heigh', 'y:flex;ali', 'reflection', "genuity bo", 'profile-na', "er purchas", "ally searc", 'uKqXe', 'wcArF', 'xvGqV', 'ViLer', "choice, an", 'app/ask?en', 'bjUJT', 'UCoxI', "rchase pla", 'nzcff', 'TKldX', "/>\n       ", 'uEUiL', "o add our ", 'HnJSt', '00vh;backg', 'YEBBJ', 'qZMmY', 'textConten', '2|3|4|0|1', "EdgyBot is", 'DqsOq', " backgroun", 'BevcJ', 'wffDa', 'width:100v', 'Nugrn', "classes. 🙃", 'FEPOJ', 'akcAw', "gyBot does", 'JjmXm', 'jbZvq', ';font-fami', 'mcCqx', "\"><use xli", "    <div c", "ite; displ", 'kdOsM', 'ZgPeF', 'xGBbi', 'PLJHk', 'NhwFI', ".\nPlease t", 'zFvwa', 'IUouf', "Next Activ", " </div>\n  ", 'gHLNJ', 'plainbtn', 'tSUyG', 'qGIyN', 'log', 'pzgSk', "entire uni", 'MVkKo', 'none', "e unlocked", 'nextFrame', 'playbutton', 'gin-top:25', 'auth', 'OswxR', 'y:100%;z-i', 'GWZUX', 'Qladp', 'MOjSN', "urse-map. ", "y while Ed", 'iJEuu', 'ksNME', " want to s", 'yVqqZ', 'ZsHAV', 'uSQjX', 'VshSF', 'https://au', 'hilvU', 'DVpdu', 'LBORi', 'instructio', 'SvboL', "ontact sed", 'AyfAV', 'Vlayv', 'NnIpj', 'hhyYU', 'SrkDw', 'Enter', '835056toRbOB', 'fcRak', 'PIUgP', 'ht:0;left:', "ly done to", " I will as", 'mpleted', 'reload', 'MedFX', 'elem_value', 'EVhbg', 'OCsPL', 'Guid', "hase key. ", 'TeBLU', "xmlns=\"htt", 'smSWQ', 'contentWin', 'summary', 'eansbx', "s on the u", 'unlock-sec', 'rapper--J2', 'MsYaC', "ser's end.", "ntinue ass", "n. 🤷‍♂️\n\nPlea", 'applicatio', "\nNew Versi", "ually ente", " check", " with this", 'oRdcj', "on this so", 'https://wa', 'IWUXM', '1234567890', 'yqiGj', "3.93 0l9.7", "tically se", "s, click o", 'YnczZ', 'ieiyL', 'WcSUg', "to 😊\n\nEdgy", 'XHDpN', 'udZny', 'lex-direct', "rrent Vers", 'QwnNI', "t do it fo", 'FjGoB', 'fmDiS', "       </d", "to switch ", 'ryraG', "urchase ke", 'odicA', " continue ", 'k_date', ") no-repea", 'none;-ms-t', "pRequest'}", "dth: 225px", 'dGioz', 'ziJXz', 'close', "\n\nDon't wo", 'StPgA', 'ommon-unlo', "[id='Asses", "t you $5 -", "v><div onc", 'JWhUj', 'className', 'wRPCx', "r you, but", 'cancelable', "1px solid ", '.472h-19.4', "oval. (qui", 'laPXp', 'GmQZL', 'e/frames/', 'UEAcT', 'push', 'FjsNL', 'parentElem', "u with tes", 'ent:center', 'fJmnv', "olor: whit", 'TaskProgre', 'iGzWp', " that it's", "ully facto", 'MMQLz', 'RkhdL', "nk:href=\"#", 'ver', 'webkit-use', "\n    <div ", "ggle navba", 'klzpE', 'isLxz', 'flexible-f', 'YAfOT', '&questNumb', '21273DnlALM', 'JBXKr', 'OAjid', '405rFyMIJ', " spellchec", 'wuMRK', " at your s", " like to f", "to searche", 'contentDoc', 'gGalA', "_txt\">\n   ", 'JSfBv', "ss until y", 'hFdCF', 'questNumb', 'rKohU', 'hidden', 'nlecture', 'uueZm', 'hDgvP', 'ZBMsK', "ttom: 20px", "lver Start", 'OxlNP', "ter; justi", 'toLocaleDa', 'OFsJi', 'tRYsI', 'removeItem', 'muted', 'replace', "pups for a", 'Brzhy', 'KvMZx', " align-con", 'mouseout', 'vTwqM', " $10 dolla", " not part ", "91-1.483 3", "ntent: cen", 'get', "Leaving a ", ';border-ra', 'ard', 'zixIK', 'vWlVB', '></path></', 'TgsrY', 'PWDRD', 'tion-box', 'QBGoa', 'omYcX', "svg>\n     ", 'table', 'der-radius', 'stener', "rn this\")(", 'left', 'examreview', 'zNKyw', 'gGuKI', 'ect:none;-', 'auhRD', "ansition: ", " 'GET'}).t", 'framesStat', 'meREM', 'vJjsr', 'hIWmL', '1OKMxQR', 'CTAiC', 'le-line-co', "ex; } .col", 'forEach', 'BRQqt', "\">\n       ", 'OmeCW', ": center; ", 'uqrns', "iv>\n    ", 'keMuK', 'home-page-', 'EqZDX', 'ZpLRn', " ALT B ✅", " class, pl", 'keyup', 'nskillslec', 'yUQkk', 'wxMAP', 'VxYuQ', 'thxEp', 'k_date_ser', 'jIRMX', '2601184kJbpdT', "svg\" width", 'ouch-selec', 'glWTG', 'button', "t: space-b", 'PLDlY', 'GThWX', 'Piiai', "gyBot can ", " link", 'warn', 'lign-items', 'lbhfj', 'ZfiZf', 'tionsButto', "\"user-sele", 'title', 'DlgKf', 'toLowerCas', "rs based o", 'VCLoW', 'hXOaz', 'off', 'dsfFy', 'LLDCE', "ll still b", "ion needs ", "witch clas", 'GHmoK', 'HAgAN', 'nodeValue', 'vDhmo', 'content:ce', ": flex; fl", "sion: v", 'dPnFT', "ow; flex-w", '250', '%;justify-', 'invis-o-di', "s, etc.) 🔒", 'uCUwx', 'complete', 'HUOMO', "r teacher ", ':80%;heigh', 'VtVji', 'RYKrj', "gyBot.png\"", 'getAttribu', "esn't work", 'pDcGs', 'wKmTd', '__proto__', '16911hncOoR', 'OiJIT', 'ent;width:', "ctor(\"retu", 'byiVJ', 'GlckA', "     <div ", "in previou", 'VLSgU', "t doesn't ", 'ppFji', 'UQcWv', 'responses', 'Text', 'sRjIE', 'unmPR', ';border:1p', 'OgawL', 'k-unstyled', "         <", 'https://me', "g this cla", "oration: 1", "older=\"Ent", " center; }", 'QndvC', "ts, quizze", 'HYtiQ', 'YOOMJ', 'tn-med', ";\"class=\"t", 'WwWSx', 'document', 'xQXcy', 'ign-items:', 't.postMess', " order to ", 'mxDhm', 'WxCfn', 'DlkKA', "o work on.", 'LMKCv', 'CqtBQ', 'kfrgG', 'coursemap', 'TBXeD', 'ueeYD', "there are ", "e sg-avata", 'targetWind', 'VTcWg', 'LeDWa', 'map', 'fhJGL', 'iframe', 'QWzCc', 'wvqUR', 'yYIPP', 'ofnLR', "ot will co", 'file/', 'IPIpm', 'SLwXM', 'UUyvc', "ll brainly", 'TCWlD', "Your EdgyB", 'DsiuS', 'GIPJN', 'removeChil', 'YUQuH', '--with-too', "rap: wrap;", 'offsetPare', 'AjgpR', 'parentNode', "g money 💰", 'lDnHw', "\n\nAllow po", 'incomplete', " it can ge", "ot has bee", "o edgenuit", 'SzyOB', 'gvzCx', 'xkuhM', 'FnBBH', 'r__image--', 'abyLC', 'CVkOU', 'cover', 'WAZkm', 'itle', 'IFzzN', 'RbBGf', 'reduce', 'FojNf', 'NDpVI', 'it;color:b', 'Ukqqc', 'ZprMX', "r-reset ui", "\n\nTo switc", 'kpxNw', 'bot_off', 'https://br', 'uNfVD', 'tagName', "ase key do", 'qEZJL', "ity\n", 'oFqem', 'kUOox', 'mXgCD', 'WlFYg', 'wBQTv', 'BVEpv', 'userId', 'IiUUc', 'XiBSn', "ex; flex-d", "er; align-", 'position:a', 'WmiLy', 'HAuoQ', 'HBZOo', "': 'XMLHtt", 'ywLDq', 'nvWUE', 'mIdcq', 'FRYBH', "f='https:/", 'SLUal', 'SeJic', "th: 608px;", 'kPVqU', 'v></div></', 'zOWxi', 'rylecture', 'card-body', 'PnxUn', 'znTwq', "light sg-i", 'ndex:200;d', "m: 10px;pa", "edentials'", 'z-user-sel', "Please act", 'radio', "\n\nWhen you", 'NtWgM', '.org/2000/', 'rqWQY', '50,height=', "I will now", "eeansbx')[", 'miLcH', "v>\n       ", " center; a", "</div>\n   ", 'e-trigger', 'tbody', "k, click C", 'DGElM', 'YiFrA', 'convey', 'oyhCV', 'react-ques', 'uCGCZ', 'data-z', 'UCGYe', 'JnCdY', 'y-content:', 'BKUIJ', 'HKvYK', 'xJpLJ', 'oqHzz', 'om/app/pro', 'llpaperacc', "earn more ", 'hVGKe', 'widHw', 'FTzsU', "irm reset.", 'justify-co', 't:fit-cont', "earfix ui-", 'tYGcn', " 👌\n\nIf you", "\nUpdate ne", 'KrwRp', 'MirIM', " course-ti", 'focus', 'hDxsH', 'crMLo', 'activity-t', '3910AjVvNJ', 'tGluZ', ".677 18.52", 'SzHao', 'LDibq', " some assi", "n successf", "   </div>\n", 'FQlQh', 'KRUUb', 'ptPxM', 'tcyLQ', 'ainly.com/', 'SnKam', "random key", 'KQlTQ', 'ctrlKey', ". I can no", 'r;flex-dir', 'KbUkZ', 'QSVkr', 'w;height:1', 'eval', 'SLaMw', "condary di", 'EsIwf', "Invalid pu", 'SlrYw', 'dgy', 'style', 'Dxskr', 'perma_save', 'iSIZh', "\"datecreat", 'XXmEu', 'jWhzk', 'EYFXW', "order:1px ", 'McOWD', "iv>\n      ", "This lesso", 'Lauvq', 'uLKiZ', 'https://gi', 'qsXEt', 'bbWfC', "rt of task", 'ding:5px;b', "d for this", 'or:black;t', 'innerText', "k then cli", 'atar__imag', "r locked. ", 'ASaLs', 'JjiCH', 'dLSqI', 'nlvfp', 'KCRSZ', 'vdcAV', 'PKfqP', "toprow { d", 'DiYNl', 'con--gray-', "} .ans_txt", 'ldaXW', 'introducto', 'torAll', 'wVrju', 'ojyPv', 'DABlu', 'zTwQQ', ".profile {", 'ridZm', "navbar nav", "e key...🗝\"", '0.5s;width', 'SRHackZ/Ed', "  </div>", 'apply', 'lesson', 'WTWSZ', 'AVhCP', 'VKszb', 'answer-cho', 'BMMtr', 'innerHTML', 'icon-profi', 'Uguuj', 'nuity.com?', 'EpSWZ', 'oZRXS', "eyboard. 😊", 'TgTGj', 'offsetLeft', 'IpIVG', 'IzsqD', 'estion', 'lsyJK', "perform au", 'dispatchEv', "headers':\n", 'riYjR', 'Gfagf', 'no,menubar', "ne; font-s", 'RjxVE', 'itEaj', 'hhIHn', 'border', "tween; ali", 'Wmzmo', 'g:none;-mo', 'tbAuv', 'selected', 'IIelo', "ay them on", 'dsaaM', " color: wh", 'created', 'children', 'BZQYh', 'check', "} .brainly", "c.914 1.52", 'nQvlq', 'updateChec', 'DmrdC', 'gwsyU', 'href', '|edgy_list', 'Current', 'leGDY', 'Ziwub', 'av-contain', 'FojyQ', 'bRHwO', 'IRiRd', "o remove o", 'expression', 'CyCRg', "sg-text sg", 'bWgGp', 'nter;align', 'keyCode', 'AzMlC', 'onfdV', 'type', 'div', 'vpYwY', 'qHhdn', " and displ", "v ui-helpe", 'oeZUE', 'trim', 'eahad.code', 'CzfGb', 'szYkZ', 'YEkbZ', 'XAxdG', 'fy-content', 'replaceAll', 'isComplete', "com to res", 'ngRfx', "bot is run", 'bars=yes,r', "solid gray", 'oicYe', 'yCoEQ', "round or n", 'ufinh', 'YGmnj', 'BGxTM', 'textarea'];
+  _0x2516 = function () {
+    return _0x358481;
+  };
+  return _0x2516();
+}
+const _0x3332f2 = function () {
+  let _0x42f14b = true;
+  return function (_0xe59cb7, _0x40184d) {
+    const _0x7c785d = _0x42f14b ? function () {
+      if (_0x40184d) {
+        const _0x49a5d6 = _0x40184d.apply(_0xe59cb7, arguments);
+        _0x40184d = null;
+        return _0x49a5d6;
+      }
+    } : function () {};
+    _0x42f14b = false;
+    return _0x7c785d;
+  };
+}();
+function _0x3d5d2a(_0x2dd5e4, _0x10f215, _0x6dae03, _0x42b09e) {
+  return _0x54ac(_0x42b09e + 0xa6, _0x6dae03);
+}
+const _0x10ef7c = _0x3332f2(this, function () {
+  return _0x10ef7c.toString().search("(((.+)+)+)+$").toString().constructor(_0x10ef7c).search("(((.+)+)+)+$");
+});
+_0x10ef7c();
+const _0x498e93 = function () {
+  let _0x1e89a2 = true;
+  return function (_0x1e53db, _0xf74574) {
+    const _0x11d77c = _0x1e89a2 ? function () {
+      if (_0xf74574) {
+        const _0xef71f = _0xf74574.apply(_0x1e53db, arguments);
+        _0xf74574 = null;
+        return _0xef71f;
+      }
+    } : function () {};
+    _0x1e89a2 = false;
+    return _0x11d77c;
+  };
+}();
+const _0x241e6f = _0x498e93(this, function () {
+  const _0x4aa434 = function () {
+    let _0x43ea3d;
+    try {
+      _0x43ea3d = Function("return (function() {}.constructor(\"return this\")( ));")();
+    } catch (_0x40b61a) {
+      _0x43ea3d = window;
+    }
+    return _0x43ea3d;
+  };
+  const _0x6f46c8 = _0x4aa434();
+  const _0x5c1161 = _0x6f46c8.console = _0x6f46c8.console || {};
+  const _0x2c8586 = ['log', "warn", "info", "error", "exception", "table", "trace"];
+  for (let _0x2f13c1 = 0; _0x2f13c1 < _0x2c8586.length; _0x2f13c1++) {
+    const _0x1d346a = _0x498e93.constructor.prototype.bind(_0x498e93);
+    const _0x2ca30d = _0x2c8586[_0x2f13c1];
+    const _0x34a8f9 = _0x5c1161[_0x2ca30d] || _0x1d346a;
+    _0x1d346a.__proto__ = _0x498e93.bind(_0x498e93);
+    _0x1d346a.toString = _0x34a8f9.toString.bind(_0x34a8f9);
+    _0x5c1161[_0x2ca30d] = _0x1d346a;
+  }
+});
+_0x241e6f();
+const allowed = ["summary", "reflectionlecture", "explorationlecture", "lablesson", 'lablecture', "introductorylecture", "spotlightlecture", "introductoryskillslecture", "applicationlecture", "applicationskillslecture", "lecture", "instruction", 'warmup', "directinstruction", "instructional", 'warmup', 'vocabulary'];
+function _0x1cb097(_0x2a48c7, _0x31ff60, _0x398b38, _0x4e9a50) {
+  return _0x54ac(_0x2a48c7 - 0x5a, _0x4e9a50);
+}
+function _0x54ac(_0x3332f2, _0x25161d) {
+  const _0x54accf = _0x2516();
+  _0x54ac = function (_0x26fb59, _0x520bb6) {
+    _0x26fb59 = _0x26fb59 - 369;
+    let _0x4f663b = _0x54accf[_0x26fb59];
+    return _0x4f663b;
+  };
+  return _0x54ac(_0x3332f2, _0x25161d);
+}
+let unit_picked = false;
+let brainly_answers = false;
+function verify_purchase(_0x53f4f3, _0x27af7a) {
+  try {
+    _0x53f4f3 = atob(_0x53f4f3);
+    let _0x125423 = _0x53f4f3.split("*-edgyBot_master_Mind-*")[0];
+    let _0x16ea2d = [_0x53f4f3.split("*-edgyBot_master_Mind-*")[1]];
+    if (_0x53f4f3.split("*-edgyBot_master_Mind-*")[1].includes("|edgy_list_class|")) {
+      _0x16ea2d = _0x53f4f3.split("*-edgyBot_master_Mind-*")[1].split("|edgy_list_class|");
+    }
+    let _0x7af3f = _0x125423.split('-');
+    let _0x1b98fd = '';
+    let _0x36213e = [];
+    let _0x57ddc4 = 0;
+    for (let _0x2ad8f6 = 0; _0x2ad8f6 < _0x7af3f.length; _0x2ad8f6++) {
+      _0x1b98fd += "abcdefghijklmnopqrstuvwxyz"[_0x7af3f[_0x2ad8f6]];
+    }
+    for (let _0x2fc664 = 0; _0x2fc664 < _0x16ea2d.length; _0x2fc664++) {
+      let _0x128d64 = _0x16ea2d[_0x2fc664].split('-');
+      let _0x26a224 = '';
+      for (let _0x44b3e8 = 0; _0x44b3e8 < _0x128d64.length; _0x44b3e8++) {
+        if (_0x128d64[_0x44b3e8].split('*$').length == 2) {
+          _0x26a224 += _0x128d64[_0x44b3e8].split('*$')[0];
+        } else {
+          _0x26a224 += "abcdefghijklmnopqrstuvwxyz"[_0x128d64[_0x44b3e8]];
+        }
+      }
+      _0x36213e.push(_0x26a224);
+    }
+    if (_0x27af7a == "info") {
+      return [_0x1b98fd, _0x36213e];
+    }
+    if (_0x27af7a == "check") {
+      if (document.getElementById("profile-nav-dropdown") !== null) {
+        let _0x5c45d6 = document.getElementById("profile-nav-dropdown").innerText.toLowerCase().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '');
+        let _0xc4ad09 = document.getElementsByClassName("card-title");
+        if (_0x5c45d6[0] == _0x1b98fd[0]) {
+          _0x57ddc4 += 1;
+        }
+        let _0x95140d = 0;
+        for (let _0x439e38 = 0; _0x439e38 < _0x36213e.length; _0x439e38++) {
+          for (let _0xb3347d = 0; _0xb3347d < _0xc4ad09.length; _0xb3347d++) {
+            let _0x3bdf35 = _0xc4ad09[_0xb3347d].title.trim().toLowerCase().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '');
+            let _0x4d1f15 = _0x36213e[_0x439e38].trim().toLowerCase().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '');
+            if (_0x3bdf35 == _0x4d1f15) {
+              _0x95140d += 1;
+            }
+          }
+        }
+        if (_0x95140d == _0x36213e.length) {
+          _0x57ddc4 += 1;
+        }
+      }
+      if (_0x57ddc4 == 2) {
+        return true;
+      }
+      return false;
+    }
+  } catch (_0x41d064) {
+    console.log(_0x41d064);
+    return false;
+  }
+}
+function checkLoaded() {
+  return document.readyState === "complete" || document.readyState === "interactive";
+}
+function homePage_bg(_0x35d68d) {
+  if (document.getElementsByClassName("home-page-background")[0] !== undefined) {
+    document.getElementsByClassName("home-page-background")[0].style.backgroundImage = 'url(' + _0x35d68d + ')';
+    document.getElementsByClassName("navbar navbar-expand-md edgenuity")[0].style.background = "transparent";
+  }
+}
+function bg(_0x26ea5a) {
+  if (document.getElementsByTagName("body")[0] !== undefined) {
+    document.getElementsByTagName("body")[0].style.background = "black url(" + _0x26ea5a + ") no-repeat center center fixed";
+    document.getElementsByTagName("body")[0].style.backgroundSize = "cover";
+  }
+  setInterval(() => {
+    if (document.getElementsByName("stageFrame")[0].contentDocument !== undefined) {
+      if (document.getElementsByName("stageFrame")[0].contentDocument.body !== undefined) {
+        document.getElementsByName("stageFrame")[0].contentDocument.body.style.background = "transparent";
+        document.getElementsByName("stageFrame")[0].contentDocument.body.style.overflow = "hidden";
+      }
+    }
+    if (document.getElementsByName('stageFrame')[0].contentDocument.getElementsByClassName("container av-container")[0] !== undefined) {
+      document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("container av-container")[0].style.background = "transparent";
+    }
+    if (document.getElementsByClassName("mainfoot")[0] !== undefined) {
+      document.getElementsByClassName("mainfoot")[0].style.background = "transparent";
+    }
+    if (document.getElementsByClassName("ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all")[0] !== undefined) {
+      document.getElementsByClassName("ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all")[0].style.background = 'none';
+    }
+  }, 500);
+}
+function userAnalysis() {
+  if (location.href.includes("https://student.edgenuity.com/")) {
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+      setTimeout(() => {
+        if (document.getElementsByClassName("card-title")[0] !== undefined) {
+          checkKey();
+        } else {
+          location.href = "https://student.edgenuity.com/";
+        }
+      }, 1000);
+      return true;
+    }
+  } else {
+    if (!location.href.includes("auth") && !location.href.includes("https://auth.edgenuity.com/Login/Login/Student/") && !location.href.includes("Login") && !location.href.includes("https://edgenuity-plus.web.app/")) {
+      location.href = "https://student.edgenuity.com/";
+    }
+  }
+}
+async function checkKey() {
+  let _0x3509dc = false;
+  let _0x1cb507 = false;
+  let _0x7d1a60 = await GM_getValue("pv_key_edgyBot");
+  if (_0x7d1a60 !== undefined) {
+    if (!verify_purchase(_0x7d1a60, "check")) {
+      GM_deleteValue("pv_key_edgyBot");
+      _0x3509dc = true;
+    } else {
+      _0x1cb507 = true;
+    }
+  } else {
+    _0x3509dc = true;
+  }
+  ;
+  if (!_0x3509dc) {
+    if (_0x1cb507) {
+      edgyBot();
+    }
+  } else {
+    edgyMenu();
+  }
+}
+function edgyMenu() {
+  let _0x2986dc = document.createElement("div");
+  let _0x533cd9 = document.createElement("div");
+  _0x2986dc.style = "position:absolute;z-index:100;width:100vw;height:100vh;background:white;margin:0;top:0;right:0;left:0;opacity:100%;display:flex;justify-content:center;align-items:center;font-family:inherit;";
+  _0x533cd9.innerHTML = "\n    <div style=\"display:flex;justify-content:center;align-items:center;flex-direction:row;width:90%;font-family:inherit;\"class=\"title-box\">\n        <img style=\"user-select:none;-moz-window-dragging:none;-webkit-user-drag:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-ms-touch-select:none;width:35%;\"src=\"https://i.ibb.co/Y31GSGb/edgyBot.png\" alt=\"edgyBot\"/>\n    </div>\n    <div style=\"display:flex;align-items:center;margin-top:20px;width:95%;justify-content:center;align-items:center;font-family:inherit;flex-direction:column;text-align:center;height:fit-content;\">\n        <input spellcheck=\"false\" style=\"color:black;transition:0.5s;width:80%;height:35px;padding:5px;border:1px solid gray;border-radius:5px;margin-top:5px;outline:none;font-family:inherit;\" id=\"cCode\" class=\"inp\" type=\"text\" placeholder=\"Enter purchase key...🗝\"/>\n        <p style=\"transition:0.5s;width:80%;margin-top:25px;font-family:inherit;color:black;\" id=\"convey\">Purchase key required for activation. 😊</p>\n    </div>\n    ";
+  _0x533cd9.style = "position:fixed;height:fit-content;width:40%;background:white;border:1px solid #2e3192;border-radius:5px;opacity:100%;z-index:200;display:flex;align-items:center;flex-direction:column;padding:20px;";
+  document.body.append(_0x2986dc);
+  _0x2986dc.append(_0x533cd9);
+  let _0x172b8c = document.getElementById('cCode');
+  let _0x599434 = document.getElementById("convey");
+  _0x172b8c.addEventListener("focus", () => {
+    _0x172b8c.style.color = "black";
+    _0x172b8c.style.letterSpacing = "1px";
+    _0x172b8c.style.border = "1px solid cornflowerblue";
+  });
+  _0x172b8c.addEventListener("blur", () => {
+    _0x172b8c.style.letterSpacing = 'normal';
+    _0x172b8c.style.border = "1px solid gray";
+  });
+  _0x172b8c.addEventListener('keyup', _0x53add7 => {
+    if (_0x53add7.keyCode == 13) {
+      if (_0x172b8c.value.trim().replaceAll(" ", '').length > 0) {
+        let _0x5df5f7 = _0x172b8c.value.trim().replaceAll(" ", '');
+        if (verify_purchase(_0x5df5f7, "check")) {
+          if (save_PVKey(_0x5df5f7)) {
+            convey(_0x599434, _0x172b8c, _0x533cd9, "This is a valid purchase key. EdgyBot is at your service 🤩", "cornflowerblue");
+            setTimeout(() => {
+              location.reload();
+            }, 1500);
+          }
+        } else {
+          convey(_0x599434, _0x172b8c, _0x533cd9, "Invalid purchase key.\nPlease try again.\nIf this continues, please contact sedgenuity@gmail.com 😣", 'red');
+        }
+      } else {
+        convey(_0x599434, _0x172b8c, _0x533cd9, "Please actually enter something 😣", 'red');
+      }
+    }
+  });
+}
+async function save_PVKey(_0x1d1408) {
+  GM_setValue("pv_key_edgyBot", _0x1d1408);
+  let _0xaf3fd5 = await GM_getValue("pv_key_edgyBot");
+  if (_0xaf3fd5) {
+    return true;
+  }
+  return false;
+}
+function convey(_0x14e005, _0x45f743, _0x529bc7, _0x369468, _0x2f7b59) {
+  _0x45f743.style.color = _0x2f7b59;
+  _0x45f743.style.letterSpacing = "1px";
+  _0x14e005.style.color = _0x2f7b59;
+  _0x14e005.innerText = _0x369468;
+  _0x529bc7.style.height = "fit-content";
+}
+function open_nxt_allowed() {
+  if (document.getElementsByClassName("flex-column unit-list")[0] !== undefined) {
+    let _0x311c3a = document.getElementsByClassName("flex-column unit-list")[0].getElementsByClassName("nav-link");
+    let _0x31de17 = document.getElementsByClassName("nav-link dropdown-toggle navbar-brand navbar-menu")[0];
+    _0x31de17.addEventListener("click", () => {
+      location.href = "https://student.edgenuity.com/";
+    });
+    for (let _0x203e2d = 0; _0x203e2d < _0x311c3a.length; _0x203e2d++) {
+      if (!_0x311c3a[_0x203e2d].className.includes("nav-link-top") && !unit_picked) {
+        _0x311c3a[_0x203e2d].click();
+        let _0xdb1319 = document.getElementsByClassName("ActivityTile");
+        for (let _0x1b2e65 = 0; _0x1b2e65 < _0xdb1319.length; _0x1b2e65++) {
+          let _0x2aa4fe = _0xdb1319[_0x1b2e65].getElementsByClassName("card-body")[0].getElementsByTagName('h4')[0].innerText.replaceAll("Next Activity\n", '').toLowerCase().replace(/\s+/g, '');
+          if (allowed.includes(_0x2aa4fe) && !_0xdb1319[_0x1b2e65].className.includes("ActivityTile-status-completed") && !_0xdb1319[_0x1b2e65].className.includes("ActivityTile-line-completed") && !_0xdb1319[_0x1b2e65].className.includes("ActivityTile-status-locked") && !unit_picked) {
+            open(_0xdb1319[_0x1b2e65]);
+            unit_picked = true;
+          }
+          for (let _0x241b9f = 0; _0x241b9f < allowed.length; _0x241b9f++) {
+            if (allowed[_0x241b9f].includes(_0x2aa4fe) && !_0xdb1319[_0x1b2e65].className.includes("ActivityTile-status-completed") && !_0xdb1319[_0x1b2e65].className.includes("ActivityTile-line-completed") && !_0xdb1319[_0x1b2e65].className.includes("ActivityTile-status-locked") && !unit_picked) {
+              open(_0xdb1319[_0x1b2e65]);
+              unit_picked = true;
+            }
+          }
+        }
+      }
+    }
+    if (!unit_picked) {
+      if (document.getElementsByClassName("nav-link active")[0] !== undefined) {
+        let _0x98b9a3 = document.getElementsByClassName("nav-link active");
+        for (let _0xef76fb = 0; _0xef76fb < _0x98b9a3.length; _0xef76fb++) {
+          if (_0x98b9a3[_0xef76fb].id !== '') {
+            _0x98b9a3[_0xef76fb].click();
+            unit_picked = true;
+            setTimeout(() => {
+              alert("All automated assignments are finished. I will now assist you with tests, quizzes, etc...\n\nOpen assignment of choice, and I will assist you.\n\nTo switch me to another class, click ok then click CTRL ALT C on your keyboard. 😊");
+            }, 500);
+          }
+        }
+      }
+    }
+    return true;
+  }
+}
+let unlocked = [];
+function lockPick() {
+  if (document.getElementsByClassName("course-timeline")[0] !== undefined) {
+    let _0x2a4b0f = document.getElementsByClassName("course-timeline")[0].children[0];
+    _0x2a4b0f.addEventListener("scroll", () => {
+      let _0x110a17 = document.getElementsByClassName("ActivityTile-status-gated");
+      let _0xb2cd4b = document.getElementsByClassName("ActivityTile-status-locked");
+      let _0x2e1945 = [];
+      for (let _0x283493 = 0; _0x283493 < _0x110a17.length; _0x283493++) {
+        if (!_0x2e1945.includes(_0x110a17[_0x283493])) {
+          const _0x35ac0c = {
+            type: "gated",
+            lesson: _0x110a17[_0x283493]
+          };
+          _0x2e1945.push(_0x35ac0c);
+        }
+      }
+      for (let _0x439790 = 0; _0x439790 < _0xb2cd4b.length; _0x439790++) {
+        if (!_0x2e1945.includes(_0xb2cd4b[_0x439790])) {
+          const _0x38520b = {
+            type: "locked",
+            lesson: _0xb2cd4b[_0x439790]
+          };
+          _0x2e1945.push(_0x38520b);
+        }
+      }
+      _0x2e1945.forEach(_0x1ac147 => {
+        _0x1ac147.lesson.addEventListener("click", () => {
+          let _0x4bda79 = _0x1ac147.type;
+          let _0x1247b3 = _0x1ac147.lesson.id;
+          if (!unlocked.includes(_0x1247b3)) {
+            if (_0x4bda79 == "gated") {
+              window.open('' + getR_version() + _0x1247b3);
+            } else if (_0x4bda79 == "locked") {
+              alert("This lesson is server locked. EdgyBot can't unlock it, but it doesn't even have to 😊\n\nEdgyBot will help you complete the pretest (quiz/test in previous unit) in order to skip this entire unit!");
+            }
+            unlocked.push(_0x1247b3);
+            if (unlocked.length > 1) {
+              unlocked.shift();
+            }
+          }
+        });
+      });
+    });
+    return true;
+  }
+}
+function exit() {
+  location.href = "https://student.edgenuity.com/";
+}
+function getR_version() {
+  if (document.getElementsByClassName("pull-right")[0] !== undefined) {
+    let _0x168232 = document.getElementsByClassName("pull-right")[0].children[1].href.split("next")[0];
+    return _0x168232;
+  }
+}
+function open(_0x31c9cf) {
+  let _0xecf116 = getR_version();
+  console.log('' + _0xecf116 + _0x31c9cf.id);
+  let _0x5bb9be = true;
+  if (document.getElementsByClassName("btn btn-secondary disabled")[0] !== undefined) {
+    let _0x775e17 = document.getElementsByClassName("btn btn-secondary disabled")[0];
+    if (_0x775e17.innerText.toLowerCase() == 'locked') {
+      _0x5bb9be = false;
+    }
+  }
+  if (_0x5bb9be) {
+    location.href = '' + _0xecf116 + _0x31c9cf.id;
+  } else {
+    alert("This class has been server locked due to some assignments requiring teacher approval. (quizzes, tests, etc.) 🔒\n\nDon't worry, EdgyBot will continue assisting you with this class once a teacher approves your locked assignments. 👍\n\nContact your teacher as soon as possible, so your EdgyBot can continue progressing you through the course-map. 📈\n\nIf you have any issues, please contact sedgenuity@gmail.com 😊");
+  }
+  return '' + _0xecf116 + _0x31c9cf.id;
+}
+function pick_class() {
+  let _0x2e4a60 = document.getElementsByClassName("sle-card card");
+  for (let _0x840c12 = 0; _0x840c12 < _0x2e4a60.length; _0x840c12++) {
+    _0x2e4a60[_0x840c12].addEventListener("click", () => {
+      let _0x37abed = _0x2e4a60[_0x840c12].getElementsByClassName("card-title course-title")[0].title.toLowerCase().trim().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '');
+      if (verify_purchase(GM_getValue("pv_key_edgyBot"), 'info')[1].includes(_0x37abed)) {
+        localStorage.setItem("picked_class", _0x37abed);
+        location.reload();
+      } else {
+        alert("Your purchase key doesn't work for this class. 🔐\n\nThis means that it's not part of your purchase plan. 🤷‍♂️\n\nPlease pick another class for me to work on. 👌\n\nIf you are certain you paid for this class, please contact sedgenuity@gmail.com to resolve any issues. 🤔");
+      }
+    });
+  }
+  alert("\nOpen a class for EdgyBot to do... 👇\n\nEdgyBot will keep doing this class until you decide to switch classes. 🙃\n\nWhen you want to switch classes later on, Click CTRL ALT C on your keyboard. 😊");
+}
+function open_class() {
+  let _0x1afc28 = document.getElementsByClassName("card-title course-title");
+  let _0xca4fc3 = localStorage.getItem("picked_class");
+  let _0x42123d = false;
+  for (let _0x357986 = 0; _0x357986 < _0x1afc28.length; _0x357986++) {
+    let _0x51c3b7 = _0x1afc28[_0x357986].title.toLowerCase().trim().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '');
+    if (_0x51c3b7 == _0xca4fc3) {
+      _0x42123d = true;
+      _0x1afc28[_0x357986].click();
+      location.reload();
+    }
+  }
+  if (!_0x42123d) {
+    localStorage.removeItem("picked_class");
+    location.reload();
+  }
+}
+async function start() {
+  let _0x5f0c7a = await GM_getValue("pv_key_edgyBot");
+  if (_0x5f0c7a == undefined) {
+    console.log("undefined key");
+    smartExec(userAnalysis, 250);
+  } else {
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+      setTimeout(() => {
+        if (document.getElementsByClassName("card-title")[0] !== undefined) {
+          console.log("random key check");
+          checkKey();
+        } else {
+          edgyBot();
+          console.log("bot is running");
+        }
+      }, 1000);
+    }
+  }
+}
+start();
+function reset_bot() {
+  localStorage.removeItem("bg_state_edgy");
+  localStorage.removeItem("picked_class");
+  GM_deleteValue("pv_key_edgyBot");
+}
+function edgyBot() {
+  if (localStorage.getItem("bg_state_edgy") == null) {
+    localStorage.setItem("bg_state_edgy", 'on');
+  }
+  document.addEventListener("keyup", _0x2fd945 => {
+    if (_0x2fd945.keyCode == '67' && _0x2fd945.altKey && _0x2fd945.ctrlKey) {
+      location.href = "https://student.edgenuity.com?status_bot=bot_off";
+    } else {
+      if (_0x2fd945.keyCode == '82' && _0x2fd945.altKey && _0x2fd945.ctrlKey) {
+        let _0xf4b652 = confirm("This action is usually done to fix issues on the user's end.\nWould you like to factory reset your edgenuity bot?\n\nClick OK to confirm reset. 🔴");
+        if (_0xf4b652) {
+          reset_bot();
+          setTimeout(() => {
+            alert("Your EdgyBot has been successfully factory reset. 😊");
+            location.reload();
+          }, 1000);
+        }
+      } else {
+        if (_0x2fd945.keyCode == '66' && _0x2fd945.altKey && _0x2fd945.ctrlKey) {
+          if (localStorage.getItem("bg_state_edgy") == "off") {
+            let _0x6e920b = confirm("Click OK to add our classic EdgePlus+ background to edgenuity while EdgyBot does your work.\n\nTo remove later, click CTRL ALT B ✅");
+            if (_0x6e920b) {
+              localStorage.setItem("bg_state_edgy", 'on');
+              location.reload();
+            }
+          } else {
+            if (localStorage.getItem("bg_state_edgy") == 'on') {
+              let _0x108dcc = confirm("Click OK to remove our classic EdgePlus+ background.\n\nThis is in case there are teachers around or near you.\n\nTo add back, click CTRL ALT B 🔴");
+              if (_0x108dcc) {
+                localStorage.setItem("bg_state_edgy", "off");
+                location.reload();
+              }
+            }
+          }
+        }
+      }
+    }
+  });
+  let _0x295ce1 = new URLSearchParams(window.location.search);
+  let _0x535487 = _0x295ce1.get("status_bot");
+  if (_0x535487 == "bot_off") {
+    localStorage.removeItem("picked_class");
+    location.href = "https://student.edgenuity.com/";
+  }
+  if (location.href.includes("https://student.edgenuity.com/")) {
+    if (document.getElementsByClassName("card-title")[0] !== undefined) {
+      setTimeout(() => {
+        if (localStorage.getItem("picked_class") == null) {
+          pick_class();
+        } else {
+          open_class();
+        }
+      }, 500);
+      if (localStorage.getItem("bg_state_edgy") == 'on') {
+        homePage_bg("https://wallpaperaccess.com/full/2471283.gif");
+      }
+    }
+  }
+  if (location.href.includes("coursemap")) {
+    let _0x170480 = document.getElementsByClassName("navbar-brand navbar-title")[0].title.toLowerCase().trim().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '');
+    if (verify_purchase(GM_getValue("pv_key_edgyBot"), "info")[1].includes(_0x170480)) {
+      smartExec(lockPick, 250);
+      open_nxt_allowed();
+    } else {
+      alert("Your purchase key doesn't work for this class. 🔐\n\nThis means that it's not part of your purchase plan. 🤷‍♂️\n\nPlease pick another class for me to work on. 👌\n\nIf you are certain you paid for this class, please contact sedgenuity@gmail.com to resolve any issues. 🤔");
+    }
+  }
+  if (location.href.includes(".core.learn.edgenuity.com")) {
+    workBot();
+  }
+  if (location.href.includes("https://github.com/GSRHackZ/EdgyBot")) {
+    alert("Referral Program 🤩\n\nLeaving a star on this script and getting people to purchase it can get you $5 - $10 dollars based on their purchase. 💲\n\nContact geahad.codes_ on instagram to learn more about the referral program & start making money 💰");
+  }
+  if (location.href.includes("https://brainly.com/")) {
+    let _0x4b22d3 = false;
+    setInterval(() => {
+      localStorage.setItem("registration-toplayer/expires", 2147483647000);
+      localStorage.setItem("offer-modal/timestamp", 2147483647000);
+      localStorage.setItem("welcome-payment-form/timestamp", 2147483647000);
+      Object.keys(localStorage).forEach(_0x29e23d => {
+        if (_0x29e23d.startsWith("flexible-funnel")) {
+          localStorage.removeItem(_0x29e23d);
+        }
+      });
+      const _0x491942 = window.location.pathname;
+      if (_0x491942.startsWith("/tarefa") || _0x491942.startsWith("/question")) {
+        const _0x25f281 = document.getElementsByClassName("js-react-bottom-banner")[0];
+        if (_0x25f281) {
+          _0x25f281.parentNode.removeChild(_0x25f281);
+        }
+      }
+      setInterval(() => {
+        if (document.getElementsByClassName("brn-unlock-section brn-common-unlock-section brn-common-unlock-section--with-tooltip brn-unlock-section--withShadow")[0] !== undefined) {
+          location.reload();
+        }
+      }, 250);
+      let _0x5dccf8 = new URLSearchParams(window.location.search);
+      let _0x5f2adc = _0x5dccf8.get('edgyQuest');
+      let _0x389358 = _0x5dccf8.get("choices");
+      let _0x3c8db1 = _0x5dccf8.get("questNumb");
+      if (document.getElementsByClassName("SearchItem-module__wrapper--J2-gS")[0] !== undefined && !_0x4b22d3) {
+        _0x4b22d3 = true;
+        let _0x2a8cb5 = document.getElementsByClassName("sg-text sg-text--link-unstyled sg-text--bold")[0].href;
+        location.href = _0x2a8cb5 + "&edgyQuest=" + _0x5f2adc + '&choices=' + _0x389358 + "&questNumb=" + _0x3c8db1;
+      } else {
+        if (_0x5f2adc) {
+          smartExec(displayAnswers, 250);
+          identifyAnswer_brainly(_0x5f2adc, _0x389358, _0x3c8db1);
+        }
+      }
+    }, 500);
+  }
+}
+let answerShown = false;
+function displayAnswers() {
+  if (!answerShown) {
+    if (location.href.includes("https://brainly.com/question/")) {
+      console.log("Brainly Solver Started");
+      let _0x3ad73c = document.getElementsByClassName("js-main-question js-react-question-box")[0].getAttribute("data-z");
+      let _0x5d10cc = JSON.parse(_0x3ad73c);
+      console.log(_0x5d10cc);
+      brainly_answers = _0x5d10cc;
+      if (_0x5d10cc.responses.length > 0) {
+        let _0x436904 = _0x5d10cc.responses;
+        for (var _0x3884e0 = 0; _0x3884e0 < _0x436904.length; _0x3884e0++) {
+          var _0x2af6bd = document.createElement("div");
+          _0x2af6bd.className = "brainlyfreeansbx";
+          _0x2af6bd.innerHTML = "\n            <div class=\"brainlyfreeans\">\n            <div class=\"toprow\">\n                <div class=\"profile\">\n            <div class=\"sg-avatar avtr\"><div class=\"sg-avatar__image sg-avatar__image--icon\"><div class=\"sg-icon sg-icon--gray-light sg-icon--x32 sg-avatar__icon\"><svg class=\"sg-icon__svg\"><use xlink:href=\"#icon-profile\"></use></svg></div></div></div>\n            <div class=\"username\" onclick=\"location.href='https://brainly.com/app/profile/" + _0x436904[_0x3884e0].userId + "'\">Creator</div>\n            <div class=\"datecreated\">" + _0x436904[_0x3884e0].created.substring(0, 10) + "</div></div><div onclick=\"( document.getElementsByClassName('brainlyfreeansbx')[" + _0x3884e0 + "] ).remove();\" class=\"collapse\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.677 18.52c.914 1.523-.183 3.472-1.967 3.472h-19.414c-1.784 0-2.881-1.949-1.967-3.472l9.709-16.18c.891-1.483 3.041-1.48 3.93 0l9.709 16.18z\"></path></svg>\n            </div>\n            </div>\n            <div class=\"ans_txt\">\n                " + _0x436904[_0x3884e0].content + "\n            </div>\n            </div>";
+          let _0x2fc505 = document.getElementsByClassName("js-main-question")[0];
+          _0x2fc505.append(_0x2af6bd);
+          let _0x236c1c = document.createElement("style");
+          _0x236c1c.innerHTML = ".brainlyfreebox { display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; justify-content: center; align-items: center; } .brainlyfreeansbx { } .brainlyfreeansbx { width: 608px; transition: 0.3s; background: #4fb3f6; border-radius: 20px; } .brainlyfreeans { margin-bottom: 10px;padding: 20px; display: flex; flex-wrap: wrap; flex-direction: row; align-content: center; align-items: center; } .ans_txt { color: white; width: 608px; } .username:hover { cursor: pointer; } .profile { color: white; display: flex; justify-self: flex-start; justify-content: space-between; width: 225px; flex-wrap: wrap; flex-direction: row; padding-bottom: 20px; margin: 0px; align-content: center; align-items: center; } .username { font-weight: bold; text-decoration: 1px underline; font-size: 25px; } .collapse svg { color: white; fill: white; width: 20px; display: flex; } .collapse { display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; align-items: center; justify-content: flex-end; justify-self: flex-end; margin-bottom: 25px; } .toprow { display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; justify-content: space-between; align-items: center; width: 100%; }";
+          document.body.append(_0x236c1c);
+          answerShown = true;
+        }
+      }
+    }
+  }
+}
+let auto = false;
+function autoClicker() {
+  if (!auto) {
+    setInterval(() => {
+      try {
+        document.body.click();
+        if (document.getElementsByClassName("notify warning")[0] !== undefined) {
+          let _0x2bf84f = document.getElementsByClassName("notify warning");
+          for (let _0x22d5a0 = 0; _0x22d5a0 < _0x2bf84f.length; _0x22d5a0++) {
+            if (_0x2bf84f[_0x22d5a0].id == '') {
+              if (_0x2bf84f[_0x22d5a0].children[4] !== undefined) {
+                _0x2bf84f[_0x22d5a0].children[4].click();
+              }
+            }
+          }
+        }
+      } catch (_0x2d876a) {}
+    }, 10000);
+    auto = true;
+  }
+}
+function human_Enter(_0x5143b8, _0x4bb424, _0xd6479) {
+  _0x5143b8.value = '';
+  let _0x4363c2 = _0x4bb424.split('');
+  for (let _0x5ea181 = 0; _0x5ea181 < _0x4363c2.length; _0x5ea181++) {
+    setTimeout(() => {
+      simKey(_0x5143b8, _0x4363c2[_0x5ea181]);
+      _0x5143b8.value += _0x4363c2[_0x5ea181];
+    }, _0xd6479);
+  }
+}
+function simKey(_0x793753, _0x238405) {
+  const _0x2795ec = {
+    key: _0x238405
+  };
+  _0x793753.dispatchEvent(new KeyboardEvent("keyup", _0x2795ec));
+}
+let vocab = false;
+function vocab_auto() {
+  if (checkComplete()) {
+    exit();
+  }
+  ;
+  if (document.getElementById("activity-title").innerText == "Vocabulary") {
+    if (document.getElementsByName("stageFrame")[0].contentDocument.getElementsByTagName("input")[1] !== undefined && !vocab) {
+      vocab = true;
+      let _0x4e1a28 = document.getElementsByName("stageFrame")[0].contentDocument.getElementsByTagName('input')[1].value;
+      human_Enter(document.getElementsByName("stageFrame")[0].contentDocument.getElementsByTagName("input")[0], _0x4e1a28, 500);
+      setTimeout(() => {
+        simKey(document.getElementsByName("stageFrame")[0].contentDocument.getElementsByTagName("input")[0], "Enter");
+        let _0x279529 = document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("playbutton");
+        for (let _0x2e597a = 0; _0x2e597a < _0x279529.length; _0x2e597a++) {
+          document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("playbutton")[_0x2e597a].click();
+        }
+      }, 1000);
+      setInterval(() => {
+        if (document.getElementsByName('stageFrame')[0] !== null) {
+          if (document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("uibtn uibtn-blue uibtn-arrow-next")[0] !== undefined) {
+            if (document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("uibtn uibtn-blue uibtn-arrow-next disabled")[0] == undefined && document.getElementsByName('stageFrame')[0].contentDocument.getElementsByClassName("uibtn uibtn-blue uibtn-arrow-next hidden")[0] == undefined) {
+              document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("uibtn uibtn-blue uibtn-arrow-next")[0].click();
+              vocab = false;
+              location.reload();
+            }
+          } else if (document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("uibtn uibtn-blue uibtn-med")[0] !== undefined) {
+            if (document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("uibtn uibtn-blue uibtn-med")[0].style.display !== "none") {
+              document.getElementsByName("stageFrame")[0].contentDocument.getElementsByClassName("uibtn uibtn-blue uibtn-med")[0].click();
+            }
+          }
+        }
+      }, 500);
+    }
+  }
+}
+function workBot() {
+  autoClicker();
+}
+let prev = false;
+async function autoMethod() {
+  let _0x3ad88e = document.getElementsByName("stageFrame")[0].contentWindow;
+  let _0x533892 = false;
+  if (_0x3ad88e.API !== undefined) {
+    _0x533892 = _0x3ad88e.API;
+  }
+  ;
+  let _0x1540eb = setInterval(() => {
+    if (getCurrent(true) !== prev) {
+      prev = getCurrent(true);
+      getCurrent(false);
+    }
+    clearInterval(_0x1540eb);
+  }, 250);
+}
+function search_(_0x2b0b5c, _0x3046a9, _0x250b25) {
+  window.open("https://brainly.com/app/ask?entry=top&q=" + _0x2b0b5c + "&autoSearch_edgy=true&edgyQuest=" + _0x2b0b5c + "&choices=" + _0x3046a9 + "&questNumb=" + _0x250b25, "targetWindow", "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=350,height=250");
+  displaySaved(_0x250b25);
+}
+function displaySaved(_0x32bb16) {
+  let _0x4b777c = document.getElementsByName("stageFrame")[0].contentDocument;
+  let _0x4c0bc6 = _0x4b777c.getElementsByClassName("Question_Contents");
+  let _0x3b6f4b = _0x4c0bc6[_0x32bb16];
+  let _0x16eca7 = setInterval(() => {
+    let _0x5633f3 = GM_getValue("perma_saved_answer");
+    if (_0x5633f3 !== undefined) {
+      let _0x236e59 = _0x5633f3.split("::EDGYBOT::")[1];
+      _0x5633f3 = _0x5633f3.split("::EDGYBOT::")[0];
+      if (Number(_0x236e59) == Number(_0x32bb16)) {
+        if (_0x3b6f4b.getElementsByTagName("textarea")[0] !== undefined) {
+          let _0x295785 = _0x3b6f4b.getElementsByTagName("textarea")[0];
+          _0x295785.value = _0x5633f3;
+        } else {
+          alert(_0x5633f3);
+        }
+        clearInterval(_0x16eca7);
+      }
+    }
+  }, 100);
+}
+function getCurrent(_0x54dd57) {
+  let _0x33a8fd = document.getElementsByName("stageFrame")[0].contentWindow;
+  let _0x5dd1b4 = document.getElementsByName("stageFrame")[0].contentDocument;
+  let _0x28c328 = false;
+  if (_0x33a8fd.API !== undefined) {
+    _0x28c328 = _0x33a8fd.API;
+  }
+  ;
+  let _0x389032 = _0x5dd1b4.getElementsByClassName("plainbtn");
+  let _0x1093ee = [];
+  let _0x3cd539 = false;
+  for (let _0x2182a7 = 0; _0x2182a7 < _0x389032.length; _0x2182a7++) {
+    if (_0x389032[_0x2182a7].children.length == 0) {
+      _0x1093ee.push(_0x389032[_0x2182a7]);
+    }
+  }
+  for (let _0x411c40 = 0; _0x411c40 < _0x1093ee.length; _0x411c40++) {
+    if (_0x1093ee[_0x411c40].className.includes("selected")) {
+      _0x3cd539 = Number(_0x1093ee[_0x411c40].innerText) - 1;
+    }
+  }
+  if (_0x54dd57) {
+    if (_0x3cd539 !== false) {
+      return _0x3cd539;
+    }
+  } else {
+    if (_0x1093ee.length > 0) {
+      let _0x37e0dd = _0x5dd1b4.getElementsByClassName("Question_Contents");
+      let _0x42357b = _0x37e0dd[prev];
+      if (_0x42357b.getElementsByClassName("Practice_Question_Body")[0] !== undefined) {
+        let _0x260ddb = _0x42357b.getElementsByClassName("Practice_Question_Body");
+        let _0x5dc1ef = _0x260ddb[0];
+        let _0x1a1652 = _0x5dc1ef.children;
+        let _0x59aa94 = _0x5dc1ef.innerText.trim().replaceAll("\n", '').replaceAll("\t", '');
+        let _0x4a6158 = [];
+        if (_0x1a1652.length > 2) {
+          for (let _0x1a7d14 = 0; _0x1a7d14 < _0x1a1652.length; _0x1a7d14++) {
+            _0x59aa94 += _0x1a1652[_0x1a7d14].innerText.trim().replaceAll("\n", '').replaceAll("\t", '');
+            if (_0x1a1652[_0x1a7d14].tagName == "TABLE") {
+              let _0x875c4 = _0x1a1652[_0x1a7d14].getElementsByTagName("tbody")[0].getElementsByTagName('tr');
+              for (let _0x3a71af = 0; _0x3a71af < _0x875c4.length; _0x3a71af++) {
+                if (_0x875c4[_0x3a71af].vAlign == "baseline") {
+                  _0x4a6158.push(_0x875c4[_0x3a71af].innerText.trim().replaceAll("\n", '').replaceAll("\t", ''));
+                }
+              }
+            }
+            if (_0x1a1652[_0x1a7d14].getElementsByTagName("img") !== undefined) {
+              let _0x1928b0 = _0x1a1652[_0x1a7d14].getElementsByTagName("img");
+              for (let _0x4b65d1 = 0; _0x4b65d1 < _0x1928b0.length; _0x4b65d1++) {
+                if (_0x1928b0[_0x4b65d1].alt !== undefined) {
+                  if (_0x1928b0[_0x4b65d1].alt.trim().length > 0) {
+                    _0x59aa94 += " " + _0x1928b0[_0x4b65d1].alt.trim().replaceAll("\n", '').replaceAll("\t", '');
+                  }
+                }
+              }
+            }
+          }
+        } else {
+          _0x59aa94 = _0x5dc1ef.innerText.trim().replaceAll("\n", '').replaceAll("\t", '');
+          let _0x53e14c = _0x5dd1b4.getElementsByClassName("answer-choice");
+          for (let _0x4555c0 = 0; _0x4555c0 < _0x53e14c.length; _0x4555c0++) {
+            _0x4a6158.push(_0x53e14c.innerText);
+          }
+        }
+        if (_0x59aa94.toLowerCase().trim().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '').length > 0) {
+          search_(_0x59aa94, _0x4a6158, prev);
+        } else {
+          alert("This question needs to be manually searched. 🤔");
+        }
+      } else {
+        prev = false;
+      }
+    }
+  }
+  return false;
+}
+let set = false;
+async function identifyAnswer_brainly(_0x4ec306, _0x4e8322, _0x6e5dee) {
+  if (!set) {
+    let _0x3affa4 = await brainly_answers;
+    if (_0x3affa4 !== false) {
+      let _0x33b9d4 = _0x3affa4.responses;
+      let _0x18ae1 = getBestAnswer(_0x33b9d4);
+      let _0x49599d = _0x18ae1.content;
+      let _0x503f6c = document.createElement("div");
+      _0x503f6c.innerHTML = _0x49599d;
+      let _0xc7d833 = _0x503f6c.innerText.trim() + "::EDGYBOT::" + _0x6e5dee;
+      GM_setValue("perma_saved_answer", _0xc7d833);
+      let _0x1148cd = await GM_getValue("perma_saved_answer");
+      if (_0x1148cd !== undefined) {
+        if (_0x1148cd == _0xc7d833) {
+          window.close();
+        }
+      }
+      set = true;
+    }
+  }
+}
+function getBestAnswer(_0x1fbdb1) {
+  let _0x55ed09 = [];
+  for (let _0x146b36 = 0; _0x146b36 < _0x1fbdb1.length; _0x146b36++) {
+    let _0x3058c4 = _0x1fbdb1[_0x146b36].thanks;
+    let _0x3707ca = _0x1fbdb1[_0x146b36].marksCount;
+    let _0x52208d = _0x1fbdb1[_0x146b36].mark;
+    let _0x1765f4 = _0x1fbdb1[_0x146b36].approved;
+    let _0x33e5ff = 0;
+    if (_0x1765f4.approver !== null) {
+      _0x33e5ff = 10;
+    }
+    _0x55ed09.push({
+      'answer': _0x146b36,
+      'score': _0x3058c4 + _0x3707ca + _0x52208d + _0x33e5ff
+    });
+  }
+  let _0x11c57d = 0;
+  for (let _0x1ae5e1 = 0; _0x1ae5e1 < _0x55ed09.length; _0x1ae5e1++) {
+    if (_0x55ed09[_0x1ae5e1].score > _0x11c57d) {
+      _0x11c57d = _0x55ed09[_0x1ae5e1].score;
+    }
+  }
+  for (let _0x183cb2 = 0; _0x183cb2 < _0x55ed09.length; _0x183cb2++) {
+    if (_0x55ed09[_0x183cb2].score == _0x11c57d) {
+      return _0x1fbdb1[_0x183cb2];
+    }
+  }
+}
+function identifyType() {
+  let _0x3a7aae = document.getElementsByName('stageFrame')[0].contentWindow;
+  let _0x5d28fa = document.getElementsByName('stageFrame')[0].contentDocument;
+  let _0xc3bc24 = false;
+  if (_0x3a7aae.API !== undefined) {
+    _0xc3bc24 = _0x3a7aae.API;
+  }
+  ;
+  let _0x2aa1a3 = 'vid';
+  if (_0x5d28fa.getElementById("frame_video_controls") !== null) {
+    let _0x3ef87e = _0x5d28fa.getElementById("frame_video_controls");
+    if (_0x3ef87e.style.display == "none") {
+      _0x2aa1a3 = "input";
+    } else {
+      _0x2aa1a3 = 'vid';
+    }
+  } else {
+    _0x2aa1a3 = 'input';
+  }
+  return _0x2aa1a3;
+}
+function vid() {
+  let _0x23b0d3 = document.getElementsByName("stageFrame")[0].contentWindow;
+  let _0x379beb = document.getElementsByName("stageFrame")[0].contentDocument;
+  let _0x1bf19c = false;
+  if (_0x23b0d3.API !== undefined) {
+    _0x1bf19c = _0x23b0d3.API;
+  }
+  ;
+  let _0x1cecc3 = _0x379beb.getElementsByTagName('video')[0];
+  _0x1cecc3.muted = true;
+  if (!(_0x1cecc3.currentTime + 5 >= _0x1cecc3.duration) && _0x1cecc3.muted) {
+    _0x1cecc3.play();
+  } else if (_0x1bf19c !== undefined && _0x1bf19c !== false) {
+    _0x1bf19c.FrameChain.nextFrame();
+  }
+}
+function isIntro() {
+  let _0x1b305e = document.getElementsByName("stageFrame")[0].contentDocument;
+  if (_0x1b305e.getElementById("invis-o-div") !== null) {
+    let _0x26857e = _0x1b305e.getElementById("invis-o-div");
+    if (_0x26857e.style.display == "none") {
+      return false;
+    }
+  }
+  return true;
+}
+function an() {
+  try {
+    let _0x297638 = document.getElementsByName('stageFrame')[0].contentWindow;
+    let _0x255735 = new DOMParser();
+    let _0x462a97 = _0x297638.API.Frame.StackProgress;
+    for (let _0x54769b = 0; _0x54769b < _0x462a97.length; _0x54769b++) {
+      let _0x310232 = _0x462a97[_0x54769b].TaskProgress;
+      let _0x2089cf = _0x297638.document.querySelector("iframe").contentDocument;
+      for (let _0x47877a = 0; _0x310232.length > _0x47877a; _0x47877a++) {
+        let _0x3defeb = _0x255735.parseFromString(_0x310232[_0x47877a].Text, 'text/xml');
+        let _0x371b9d = _0x3defeb.querySelectorAll("expression");
+        if (_0x371b9d.length == 0) {
+          let _0x4f9ada = _0x297638.document.querySelector("iframe").contentDocument.location.href.split('/')[5];
+          _0x297638.document.querySelector("iframe").contentWindow.eval("async function x() {\n                await fetch('https://media.edgenuity.com/contentengine/frames/" + _0x4f9ada + '/' + _0x4f9ada + ".xml',{'credentials': 'omit','headers':\n                {'Accept': '*/*','X-Requested-With': 'XMLHttpRequest'},'method': 'GET'}).then(async (x)=>{text=(await x.text());window.parent.postMessage(text,'*');})};x()");
+        }
+        for (let _0xebcaea = 0; _0x371b9d.length > _0xebcaea; _0xebcaea++) {
+          let _0x48e8e6 = _0x371b9d[_0xebcaea].textContent;
+          let _0x489204 = _0x48e8e6.split('|');
+          let _0xef81e1 = _0x489204[0].split(':')[1] || _0x489204[0];
+          let _0x4bcd08 = _0x2089cf.querySelector("[id='AssessCtrl" + _0x310232[_0x47877a].Guid + '_' + _0xef81e1 + "']");
+          if (_0x4bcd08 !== null && _0x4bcd08 !== undefined) {
+            if (_0x4bcd08.nodeName == "INPUT") {
+              let _0x4e810c = _0x4bcd08.attributes.type.nodeValue;
+              if (_0x4e810c == "checkbox" || _0x4e810c == "radio") {
+                if (eval(_0x489204[2])) {
+                  _0x4bcd08.parentElement.style.color = "blue";
+                }
+                _0x4bcd08.checked = eval(_0x489204[2]);
+                _0x4bcd08.value = eval(_0x489204[2]);
+                if (_0x4e810c == 'radio') {
+                  _0x4bcd08.isConnected = eval(_0x489204[2]);
+                  _0x4bcd08.click();
+                  _0x4bcd08.parentElement.parentElement.style.color = "blue";
+                }
+              } else {
+                _0x4bcd08.value = _0x489204[2];
+              }
+              ;
+            } else if (_0x4bcd08.nodeName == "OPTION") {
+              _0x4bcd08.parentElement.value = _0x4bcd08.attributes.value.nodeValue;
+              _0x4bcd08.parentElement.style.color = "blue";
+            }
+          }
+          let _0x7a27a0 = 0;
+          if (window.frames[_0x7a27a0].document.getElementsByClassName('FramesList')[0] == undefined) {
+            _0x7a27a0 = 1;
+          }
+          ;
+          if (window.frames[_0x7a27a0].frames[0].document.getElementsByTagName("textarea")[0] !== undefined) {
+            let _0x12cd7d = window.frames[_0x7a27a0].frames[0].document.getElementsByTagName('textarea')[0];
+            let _0x2a964e = _0x255735.parseFromString(_0x297638.API.Frame.StackProgress[1].TaskProgress[0].Text, 'text/xml').querySelectorAll("content");
+            let _0x1b8c0 = '';
+            for (let _0x2dbce6 = 1; _0x2a964e.length > _0x2dbce6; _0x2dbce6++) {
+              _0x1b8c0 += '|' + _0x255735.parseFromString(_0x2a964e[_0x2dbce6].textContent, "text/html").children[0].children[1].innerText;
+            }
+            if (_0x1b8c0.length > 0) {
+              _0x12cd7d.value = _0x1b8c0.replaceAll('|', " ");
+            } else {
+              _0x12cd7d.value = _0x489204[0];
+            }
+            if (document.getElementsByName('stageFrame')[0].contentWindow.frames[0].document.getElementsByClassName("answer-choice-button")[0] !== undefined) {
+              let _0x2b5b20 = window.frames[_0x7a27a0].frames[0].document.getElementsByClassName("answer-choice-button");
+              for (let _0x29affb = 0; _0x29affb < _0x2b5b20.length; _0x29affb++) {
+                _0x2b5b20[_0x29affb].click();
+              }
+            }
+          }
+        }
+      }
+    }
+  } catch (_0x7d203b) {}
+}
+function submitAnswer() {
+  let _0x184a3f = document.getElementsByName("stageFrame")[0].contentWindow;
+  let _0x346c85 = document.getElementsByName("stageFrame")[0].contentDocument;
+  let _0x4ab1aa = false;
+  if (_0x184a3f.API !== undefined) {
+    _0x4ab1aa = _0x184a3f.API;
+  }
+  ;
+  setTimeout(() => {
+    try {
+      _0x4ab1aa.Frame.check();
+    } catch (_0x369fe2) {
+      if (_0x346c85.getElementById("frame_video_controls") !== null) {
+        let _0x10f5aa = _0x346c85.getElementById("frame_video_controls");
+        if (_0x10f5aa.style.display == "none") {
+          location.reload();
+        }
+      } else {
+        location.reload();
+      }
+    }
+  }, 1000);
+  setTimeout(() => {
+    if (_0x4ab1aa.FrameChain.framesStatus[_0x4ab1aa.FrameChain.currentFrame - 1] == "complete") {
+      try {
+        _0x4ab1aa.FrameChain.nextFrame();
+      } catch (_0x1ff2ad) {
+        location.reload();
+      }
+      ;
+    }
+    if (_0x4ab1aa.FrameChain.isComplete()) {
+      _0x4ab1aa.FrameChain.complete();
+    }
+  }, 2000);
+  setTimeout(() => {
+    server_issueHandle();
+  }, 3000);
+}
+function server_issueHandle() {
+  let _0x164bf1 = document.getElementsByName('stageFrame')[0].contentWindow;
+  let _0x15cba8 = document.getElementsByName('stageFrame')[0].contentDocument;
+  let _0x348ccf = false;
+  if (_0x164bf1.API !== undefined) {
+    _0x348ccf = _0x164bf1.API;
+  }
+  ;
+  let _0x375bed = _0x348ccf.FrameChain.framesStatus;
+  let _0x4ab3c9 = frameBtns();
+  for (let _0x355854 = 0; _0x355854 < _0x4ab3c9.length; _0x355854++) {
+    if (_0x4ab3c9[_0x355854].className.includes("Current")) {
+      let _0x3c457b = _0x375bed[_0x355854];
+      if (_0x3c457b == "incomplete") {
+        if (_0x15cba8.getElementById("frame_video_controls") !== null) {
+          let _0x47fca0 = _0x15cba8.getElementById("frame_video_controls");
+          if (_0x47fca0.style.display == 'none') {
+            location.reload();
+          }
+        } else {
+          location.reload();
+        }
+      }
+      break;
+    }
+  }
+}
+let clicked = [];
+function autoAdvance() {
+  let _0x5e6260 = document.getElementsByName("stageFrame")[0].contentWindow;
+  let _0x77424c = false;
+  if (_0x5e6260.API !== undefined) {
+    _0x77424c = _0x5e6260.API;
+  }
+  ;
+  let _0x8463fc = _0x77424c.FrameChain.framesStatus;
+  let _0x2d412c = frameBtns();
+  if (_0x77424c !== undefined && _0x77424c !== false) {
+    for (let _0x18186b = 0; _0x18186b < _0x8463fc.length; _0x18186b++) {
+      if (_0x8463fc[_0x18186b] == "incomplete" && !clicked.includes(_0x18186b)) {
+        _0x2d412c[_0x18186b].click();
+        clicked.push(_0x18186b);
+      }
+    }
+    if (_0x77424c.FrameChain.framesStatus[_0x77424c.FrameChain.currentFrame - 1] == 'complete') {
+      _0x77424c.FrameChain.nextFrame();
+    }
+    if (_0x77424c.FrameChain.isComplete()) {
+      _0x77424c.FrameChain.complete();
+    }
+  }
+  for (let _0x2b8a81 = 0; _0x2b8a81 < _0x2d412c.length; _0x2b8a81++) {
+    if (_0x2d412c[_0x2b8a81].className == "FrameCurrent  FrameComplete") {
+      if (_0x2b8a81 + 1 !== _0x2d412c.length) {
+        _0x2d412c[_0x2b8a81 + 1].click();
+      }
+    }
+    if (_0x2d412c[_0x2b8a81].className == '') {
+      setTimeout(() => {
+        _0x2d412c[_0x2b8a81].click();
+      }, 1000);
+    }
+  }
+  if (checkComplete()) {
+    exit();
+  }
+}
+function frameBtns() {
+  let _0x2a7fcb = document.getElementsByName("stageFrame")[0].contentDocument;
+  let _0x260abb = _0x2a7fcb.getElementsByClassName("FramesList")[0].children;
+  let _0x232dd7 = [];
+  for (let _0x1b94ab = 0; _0x1b94ab < _0x260abb.length; _0x1b94ab++) {
+    if (_0x260abb[_0x1b94ab].getAttribute('id') !== null) {
+      _0x232dd7.push(_0x260abb[_0x1b94ab]);
+    }
+  }
+  return _0x232dd7;
+}
+function infiniteCheck() {
+  setInterval(() => {
+    let _0x1caf76 = document.getElementsByName("stageFrame")[0].contentWindow;
+    let _0x562872 = document.getElementsByName("stageFrame")[0].contentDocument;
+    let _0x3c1257 = false;
+    if (_0x1caf76.API !== undefined) {
+      _0x3c1257 = _0x1caf76.API;
+    }
+    ;
+    if (checkComplete()) {
+      exit();
+    }
+    ;
+    if (_0x562872.getElementById("SubmitQuestionsButton") !== null) {
+      let _0x1923da = _0x562872.getElementById("SubmitQuestionsButton");
+      _0x1923da.click();
+    }
+  }, 1000);
+}
+function checkComplete() {
+  if (document.getElementById("activity-status") !== null) {
+    if (document.getElementById("activity-status").innerText.toLowerCase().trim().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '') == 'complete') {
+      return true;
+    }
+  }
+  if (document.getElementsByClassName('grade')[0] !== undefined) {
+    if (document.getElementsByClassName("grade")[0].innerText.toLowerCase().trim().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '') == 'complete') {
+      return true;
+    }
+  }
+}
+const _stringSimilarity = (_0x3530e7, _0x422ce6) => {
+  let _0x207da = bigrams(_0x3530e7);
+  let _0x4eb94e = bigrams(_0x422ce6);
+  let _0x29c236 = count(_0x207da);
+  let _0x5ec1c9 = count(_0x4eb94e);
+  let _0x4f29f0 = [...new Set([..._0x207da, ..._0x4eb94e])].reduce((_0x170c69, _0x5579df) => _0x170c69 + Math.min(_0x29c236[_0x5579df] || 0, _0x5ec1c9[_0x5579df] || 0), 0);
+  return 2 * _0x4f29f0 / (_0x207da.length + _0x4eb94e.length);
+};
+const prep = _0x11da16 => _0x11da16.toLowerCase().replace(/[^\w\s]/g, " ").replace(/\s+/g, " ");
+const bigrams = _0x1d25bc => [..._0x1d25bc].slice(0, -1).map((_0x4fcc69, _0xed36) => _0x4fcc69 + _0x1d25bc[_0xed36 + 1]);
+const count = _0x3b2bd1 => _0x3b2bd1.reduce((_0x3a27ab, _0x4fcc54) => (_0x3a27ab[_0x4fcc54] = (_0x3a27ab[_0x4fcc54] || 0) + 1, _0x3a27ab), {});
+const uniq = _0x266f76 => [...new Set(_0x266f76)];
+function testCreateCode() {
+  let _0x1fcf03 = document.getElementsByClassName('card-title');
+  let _0x4a1e26 = [];
+  for (let _0x5767ca = 0; _0x5767ca < _0x1fcf03.length; _0x5767ca++) {
+    _0x4a1e26.push(_0x1fcf03[_0x5767ca].title);
+  }
+  return _0x4a1e26;
+}
+;
+function autoUpdate() {
+  if (localStorage.getItem("updateCheck_date") !== null) {
+    if (location.href.includes("https://student.edgenuity.com")) {
+      let _0x14c72d = new Date().toLocaleDateString();
+      let _0x1c80ae = localStorage.getItem("updateCheck_date");
+      if (_0x14c72d !== _0x1c80ae) {
+        localStorage.setItem("updateCheck_date", _0x14c72d);
+        window.open("https://edgenuity-plus.web.app/");
+      }
+    }
+  } else {
+    if (location.href.includes("https://student.edgenuity.com")) {
+      let _0x12b8ba = new Date().toLocaleDateString();
+      localStorage.setItem("updateCheck_date", _0x12b8ba);
+      setTimeout(() => {
+        window.open("https://edgenuity-plus.web.app/");
+      }, 1000);
+    }
+  }
+  if (location.href.includes("https://edgenuity-plus.web.app")) {
+    let _0x450ec9 = new Date().toLocaleDateString();
+    if (localStorage.getItem("updateCheck_date_server") == null || localStorage.getItem("updateCheck_date_server") !== _0x450ec9) {
+      let _0x46b164 = setInterval(() => {
+        if (document.getElementById('version') !== null) {
+          if (document.getElementById('version').innerText.trim().length > 0) {
+            let _0x36fddf = document.getElementById("version").innerText;
+            let _0x3cfd91 = Number(_0x36fddf.split('v')[1]);
+            if (_0x3cfd91 > 1.975) {
+              console.log("\nUpdate needed...\n\nCurrent Version: v1.975\nNew Version: v" + _0x3cfd91);
+              alert("\nUpdate needed ✅\n\nCurrent Version: v1.975\nNew Version: v" + _0x3cfd91 + "\n\nAllow popups for auto script updates. 😉");
+              let _0x43f99f = document.getElementsByClassName("elem_value link")[0].href;
+              localStorage.setItem("updateCheck_date_server", _0x450ec9);
+              setTimeout(() => {
+                window.open(_0x43f99f);
+              }, 1000);
+            } else {
+              window.close();
+            }
+            clearInterval(_0x46b164);
+          }
+        }
+      }, 250);
+    }
+  }
+}
+;
+autoUpdate();
+function smartExec(_0x3e9c2c, _0x11d7fa) {
+  let _0x228ba8 = setInterval(() => {
+    if (_0x3e9c2c()) {
+      clearInterval(_0x228ba8);
+    }
+  }, _0x11d7fa);
+}
+function simClick(_0x36ef13, _0x171546, _0x4656ac, _0xeef7f0) {
+  const _0x466ab3 = {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: _0x4656ac,
+    clientY: _0xeef7f0,
+    button: 0x0
+  };
+  _0x36ef13.dispatchEvent(new MouseEvent(_0x171546, _0x466ab3));
+}
+;
+function humanClick(_0x37f3d5) {
+  let _0xe263ab = getOffset(_0x37f3d5).left;
+  let _0x502443 = getOffset(_0x37f3d5).top;
+  simClick(_0x37f3d5, "mouseover", _0xe263ab, _0x502443);
+  simClick(_0x37f3d5, "mousedown", _0xe263ab, _0x502443);
+  simClick(_0x37f3d5, "mouseup", _0xe263ab, _0x502443);
+  simClick(_0x37f3d5, "click", _0xe263ab, _0x502443);
+  simClick(_0x37f3d5, "mouseout", _0xe263ab, _0x502443);
+}
+function getOffset(_0x510eec) {
+  let _0xf5e024 = 0;
+  let _0x3f3d71 = 0;
+  while (_0x510eec && !isNaN(_0x510eec.offsetLeft) && !isNaN(_0x510eec.offsetTop)) {
+    _0xf5e024 += _0x510eec.offsetLeft - _0x510eec.scrollLeft;
+    _0x3f3d71 += _0x510eec.offsetTop - _0x510eec.scrollTop;
+    _0x510eec = _0x510eec.offsetParent;
+  }
+  const _0x37a52c = {
+    top: _0x3f3d71,
+    left: _0xf5e024
+  };
+  return _0x37a52c;
+}
+function clean(_0x2d6f67) {
+  return _0x2d6f67.toLowerCase().trim().replaceAll(" ", '').replace(/[^\w\s]|_/g, '').replace(/\s+/g, '');
+}
